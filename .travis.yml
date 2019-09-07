@@ -1,3 +1,4 @@
+language: generic
 sudo: required
 services:
   - docker
@@ -15,8 +16,10 @@ deploy:
   environment: "Docker-env"
   bucket_name: "elasticbeanstalk-us-east-2-348179825777"
   bucket_path: "docker"
+  access_key_id: AKIAVCEJCQRY7RHVHLOV
+  secret_access_key: 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
   on:
     branch: master
-  access_key_id: "AKIAVCEJCQRYQDMWSM7X"
-  secret_access_key: "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"
+
+
 
